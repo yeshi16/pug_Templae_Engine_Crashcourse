@@ -1,0 +1,49 @@
+
+<!-- mixin are reusable code in pug. they behave like function -->
+<!-- you can call the mixin in the pug project and you can also pass data as argument-->
+<!-- declare a mixin at the top of the pug file using mixin key word--><!DOCTYPE html >
+<html> 
+  <head> 
+    <title>Mixins in Pug </title>
+    <style>
+      .comment { 
+          font-family: sans-serif;
+          line-height: 1.5;
+          padding: 10px;
+          border: 1px solid #555;
+          width: 250px;
+      }
+      
+      .date { 
+          font-size: 85%;
+          text-align: right;
+      }
+      .author {
+          font-size: 110%;
+          font-weight: bold;
+      }
+      .text {
+          font-size: 100%;
+      }
+    </style>
+  </head>
+  <body> 
+    <!-- call the mixin using the +-->
+    <!-- div with comment class-->
+    <div class="comment">
+      <!-- create if statmemt -->
+      <!-- create 3 div with class for each data-->
+      <div class="date">04-02-2024</div>
+      <div class="author">John D.</div>
+      <div class="text">hello wies</div>
+    </div>
+    <!-- div with comment class-->
+    <div class="comment">
+      <!-- create if statmemt --><em>(Posted by Admin)</em>
+      <!-- create 3 div with class for each data-->
+      <div class="date">05-02-2024</div>
+      <div class="author">Jane</div>
+      <div class="text">hi everyone</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+doctype html 
+html 
+    head 
+        link(rel="stylesheet", href="style.css")
+        // internal css 
+        style. 
+            h1 {
+                color: red;
+                text-decoration: underline;
+                text-transform: uppercase;
+                text-align: center;
+            }
+    body 
+        // header with id pateTitle 
+        h1#pageTitle Contact Us 
+        // import the nav pug file
+        include includes/nav.pug
+        // paragraph with class big-para and multimline parahgraph
+        P.big-para. 
+            here is my big paragraph for 
+            some test
+        P.big-para. 
+            here is some more big paragraph for 
+            some test  
+        // empty div    
+        div    
+        // div with class display-box    
+        .display-box 
+         // div with id myOnlyDiv
+        #myOnlyDiv  
+        // data-js is conditional (ternary) operator   
+        input(type="password" name="inpPwd" data-js=`${ 5 > 2 ? 'OK' : 'NOT OK'}`)
+        // using - creates js code
+        - const myClasses = ['class1', 'class2', 'class3']
+        // create div with class list of the 3 array 
+        div(class=myClasses)
+
+        - const myStyles = {"color": 'red', "background-color": 'blue'}
+        // create div with inline style with color and background-color
+        div(style=myStyles)
+
+        - const myAttributes = {"src": 'myPhoto.png', "alt": 'this is my photo'}
+        // create image element with src and alt attribute
+        img&attributes(myAttributes)
+
+        input(type="text" disabled=true)

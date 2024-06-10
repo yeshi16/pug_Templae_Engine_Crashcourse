@@ -1,0 +1,34 @@
+doctype html 
+html 
+    head 
+    body 
+        h2 My Web Application 
+        // created object
+        - let user = {name: "John", loggedIn: false, lastLogin: 6}
+        // if else statment based on loggedIn is T/F 
+        if user.loggedIn
+            p   
+                // use pipe to create plane text
+                | Welcome back,
+                strong #{user.name}
+        else if user.lastLogin < 10 
+            p Your last login was #{user.lastLogin} minutes ago 
+            p 
+                a(href="/login") Log In Again 
+        else    
+            a(href="/login") Log In
+
+
+        // switch statment 
+        // orderStatus => pending || In_transit || completed
+        - const orderStatus = 'pending'
+
+        case orderStatus 
+            when 'pending'
+                p Your order has beeb placed and will be sent shortly. 
+            when 'In_transit'    
+                p Your order is on the move
+            when 'In_transit'    
+                p Your order has been completed  
+            default 
+                p sorry we aren't sure what happend to your order...

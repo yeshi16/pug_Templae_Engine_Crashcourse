@@ -1,0 +1,56 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <link rel="stylesheet" href="style.css"/>
+    <!-- internal css -->
+    <style>
+      h1 {
+          color: red;
+          text-decoration: underline;
+          text-transform: uppercase;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body> 
+    <!-- header with id pateTitle -->
+    <h1 id="pageTitle">Contact Us </h1>
+    <!-- import the nav pug file--><!DOCTYPE html >
+    <html>
+      <head> 
+        <title>Include in Pug </title>
+      </head>
+      <body>
+        <nav> 
+          <!-- for the links to work properly the html output has to be in the same folder-->
+          <!-- the bottom link works for nav.html but doesnt work for the imported html files becase the path wont be correct since they are at at differetn folder--><a href="../mainPage.html">Home</a><a href="#">about us</a><a href="../contact.html">contact us</a>
+        </nav>
+      </body>
+    </html>
+    <!-- paragraph with class big-para and multimline parahgraph-->
+    <P class="big-para">
+      here is my big paragraph for 
+      some test
+    </P>
+    <P class="big-para">
+      here is some more big paragraph for 
+      some test  
+    </P>
+    <!-- empty div    -->
+    <div>   </div>
+    <!-- div with class display-box    -->
+    <div class="display-box"> 
+      <!-- div with id myOnlyDiv-->
+    </div>
+    <div id="myOnlyDiv"> </div>
+    <!-- data-js is conditional (ternary) operator   -->
+    <input type="password" name="inpPwd" data-js="OK"/>
+    <!-- using - creates js code-->
+    <!-- create div with class list of the 3 array -->
+    <div class="class1 class2 class3"></div>
+    <!-- create div with inline style with color and background-color-->
+    <div style="color:red;background-color:blue;"></div>
+    <!-- create image element with src and alt attribute--><img src="myPhoto.png" alt="this is my photo"/>
+    <input type="text" disabled="disabled"/>
+  </body>
+</html>

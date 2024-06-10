@@ -1,0 +1,27 @@
+doctype html 
+html 
+    head 
+    body 
+        h1 Loops 
+        // for each loop for array
+        // n is value i is index
+        each n, i  in [10, 23, 35, 46, 5]
+            p= i + " - " + n
+        // create names array to loop trough
+        - const names= ['dom', 'sophie', 'mark']  
+        // for each loop
+        for n, i in names 
+            p= n + " - " + i 
+
+        - const grades = {"web Dev": 85, "software Design": 80} 
+        // loop grades object i is key, n is value
+        each n, i in grades 
+            p= i + " - " + n  
+
+        - const choice = []
+        // else statment if the loop is empty
+        each n, i in choice 
+            p= i + " - " + n  
+        else 
+            p 
+                strong There is no values to loop through
